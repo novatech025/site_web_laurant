@@ -1,0 +1,32 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'main/css/uikit.min.css'%}">
+    <link rel="stylesheet" href="{%static 'main/css/uikit.css'%}">
+    <link rel="stylesheet" href="{%static 'main/css/style.css'%}">
+    <script src="{% static 'main/js/uikit.min.js' %}"></script>
+    <script src="{% static 'main/js/uikit-icons.min.js' %}"></script>
+
+    {% block title %}
+        <title> {{title}} </title>
+    {% endblock title %}
+</head>
+<body>
+    {% include "main/component/navbar.html" %} 
+
+
+    {% block content %}
+
+    {% comment %} contnu ici  {% endcomment %}
+
+    {% endblock content %}
+
+
+    {% include "main/component/footer.html" %}
+    
+</body>
+</html>
