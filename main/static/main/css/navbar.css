@@ -21,7 +21,6 @@ header .header-top .header-top-left {
 }
 
 
-
 header .header-top .header-top-right {
     flex: 4;
     background-color: var(--color-second1);

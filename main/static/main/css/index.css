@@ -60,8 +60,7 @@
     height: 100%;
     padding: 10px 5%;
     box-sizing: border-box;
-    background: linear-gradient(20deg, var(--color1) 40%, transparent 100%);
-    background: linear-gradient(90deg, var(--color1) 40%, transparent 100%);
+    background: linear-gradient(90deg, var(--color1)40%, transparent 100%);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -86,6 +85,7 @@
     align-items: center;
     padding: 2.5%;
 }
+
 
 .first-Wrapper-left,
 .second-wrapper-left,

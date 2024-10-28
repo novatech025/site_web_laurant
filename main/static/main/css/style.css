@@ -1,6 +1,17 @@
 :root{
 
-    --color1:#582900;
-    --color-second1:#EAC435;
-    --color-second1-filter:#eac33545;
+    --principal1-color:#582900;
+    --principal2-color:#804D00;
+    --principal3-color:#582900;
+    --principal4-color:#582900;
+    --principal5-color:#582900f4;
+    --principal6-color:#582900dc;
+
+    
+    --second1-color:#EAC435;
+    --second1-color:#F0D866;
+    --second1-color:#EAEAB8;
+    --second1-color:#F2D47C;
+    --second1-color:#FFEB9C;
+    --second1-color:#fff0c2f2;
 }
