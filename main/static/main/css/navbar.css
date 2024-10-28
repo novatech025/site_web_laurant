@@ -16,7 +16,7 @@ header .header-top .header-top-left {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: white !important;
     
 }
 
@@ -28,6 +28,11 @@ header .header-top .header-top-right {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white ;
+}
+
+header .header-top .header-top-right .uk-icon-button{
+    background-color: transparent;
     color: white;
 }
 
@@ -52,12 +57,12 @@ header .uk-navbar-container .uk-active a {
 }
 
 header .uk-navbar-container .uk-active a:hover {
-    color: var(--color-second1);
+    color: var(--color1);
 }
 
 header .uk-sticky-fixed{
-    background-color: var(--color1) !important;
-    color: white !important;
+    background-color: var(--color-second1) !important;
+    color: white ;
 }
 
 /* .contact-us-cta {

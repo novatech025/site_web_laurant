@@ -1,8 +1,100 @@
-.home .home-image{
-    background-color: var(--color1);
-    /* height: 30vh; */
+/* .sub-home-bannner { 
+    height: 400px;
+    width: 100%;
+    padding: 20px 10%;
+    background-size: contain;
+    box-sizing: content-box;    
 }
 
-/* .home-image img{
-    height: 30vh;
-} */
+.home-banner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 5%;
+    box-sizing: border-box;
+    background: linear-gradient(20deg, var(--color1) 40%, transparent 100%);
+    background: linear-gradient(90deg, var(--color1) 40%, transparent 100%);
+    display: flex;
+    align-items: center;
+}
+
+.home-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.home-banner h1 {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.home-banner p {
+    width: 45%;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+  */
+
+.home-content {
+    height: 50vh;
+    position: relative;
+    padding: 20px 10%;
+    background-size: contain;
+    box-sizing: content-box;
+    background-image: url("../images/homeImage.jpg");
+
+
+}
+
+.home-content-banner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 5%;
+    box-sizing: border-box;
+    background: linear-gradient(20deg, var(--color1) 40%, transparent 100%);
+    background: linear-gradient(90deg, var(--color1) 40%, transparent 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-content-banner h1 {
+    color: white;
+    font-weight: bold;
+}
+
+.home-content-banner p {
+    width: 45%;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.first-Wrapper,
+.second-wrapper,
+.third-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5%;
+}
+
+.first-Wrapper-left,
+.second-wrapper-left,
+.third-wrapper-left {
+    width: 45%;
+}
+.first-Wrapper-right,
+.second-wrapper-right,
+.third-wrapper-right {
+    width: 45%;
+}
+
