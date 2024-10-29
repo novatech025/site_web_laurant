@@ -60,9 +60,9 @@
     height: 100%;
     padding: 10px 5%;
     box-sizing: border-box;
-    background: linear-gradient(90deg, var(--color1)40%, transparent 100%);
+    background: linear-gradient(90deg, var(--principal1-color)40%, transparent 100%);
     display: flex;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     justify-content: center;
 }
@@ -77,7 +77,7 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.first-Wrapper,
+/* .first-Wrapper,
 .second-wrapper,
 .third-wrapper {
     display: flex;
@@ -97,4 +97,4 @@
 .third-wrapper-right {
     width: 45%;
 }
-
+ */

@@ -7,12 +7,12 @@ header .header-top {
     position: relative;
     display: flex;
     height: 50px;
-    background-color: var(--color1);
+    background-color: var(--principal1-color);
 }
 
 header .header-top .header-top-left {
     flex: 8;
-    background-color: var(--color1);
+    background-color: var(--principal1-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,14 +23,14 @@ header .header-top .header-top-left {
 
 header .header-top .header-top-right {
     flex: 4;
-    background-color: var(--color-second1);
+    background-color: var(--second1-color);
     display: flex;
     align-items: center;
     justify-content: center;
     color: white ;
 }
 
-header .header-top .header-top-right .uk-icon-button{
+header .uk-icon-button{
     background-color: transparent;
     color: white;
 }
@@ -50,17 +50,17 @@ header .uk-navbar-container .uk-container {
 }
 
 header .uk-navbar-container .uk-active a {
-    color: var(--color1);
+    color: var(--principal1-color);
     font-weight: bold;
 
 }
 
 header .uk-navbar-container .uk-active a:hover {
-    color: var(--color1);
+    color: var(--principal1-color);
 }
 
 header .uk-sticky-fixed{
-    background-color: var(--color-second1) !important;
+    background-color: var(--second1-color) !important;
     color: white ;
 }
 

@@ -1,11 +1,11 @@
 footer{
     height: 40vh;
     width: 100%;
-    background-color: #582900;
+    background-color: var(--principal1-color);
     
 }
 
 .footer-content{
-    background-color: #582900;
+    background-color: var(--principal1-color);
 
 }
