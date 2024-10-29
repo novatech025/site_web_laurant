@@ -1,0 +1,15 @@
+.service{
+    color: var(--color1);
+
+}
+.text{
+    color:#582900;
+}
+.h3{
+    color:#804D00;
+}
+.card-date{
+    color:#582900;
+    float:right;
+
+}
