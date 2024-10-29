@@ -14,4 +14,11 @@
     --second1-color:#F2D47C;
     --second1-color:#FFEB9C;
     --second1-color:#fff0c2f2;
+
+    --radius: 45px;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace !important;
+
 }
