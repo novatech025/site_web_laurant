@@ -1,6 +1,136 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-<!--code html ici-->
-<h1>contact</h1>
+<link rel="stylesheet" href="{% static 'main/css/contact.css' %}">
+
+<section class="contact">
+    <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+        data-src="{% static 'main/images/sable/product-jpeg-1000x1000.jpg' %}" uk-img>
+        <div class="contact-banner">
+            <h2>
+                Bienvenue chez QUALISABLE
+            </h2>
+            <p>
+
+                QUALISABLE est votre fournisseur de sable de référence. Nous proposons une vaste sélection de sables,
+                adaptés à tous vos projets, de la construction à l'aménagement paysager. Nos livraisons sont
+                personnalisées
+                selon vos besoins.<br>Contactez-nous dès aujourd'hui !
+            </p>
+        </div>
+    </div>
+    <div class="contact-bottom">
+
+    </div>
+    <div class="question-info">
+        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+            <p uk-tooltip="BEZOUT KADJI">
+                "Le sable, autrefois abondant, est devenu une ressource rare en raison de notre soif insatiable de béton."
+                <br>
+                "Matériau ancestral, se réinvente constamment. Les nouvelles technologies nous permettent de
+                l'utiliser de manière plus durable et efficace."
+            </p>
+        </div>
+    </div>
+    <div class="supcont-wrapper">
+        
+        <div class="supcont-wrapper-left" id="contact_info">
+            <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                <h3>Besoin d'un coup de pouce?</h3>
+            <ul>
+                <li> Notre équipe d'experts est à votre disposition pour répondre à vos questions et vous
+                    accompagner dans vos projets numériques.</li>
+
+                <li>
+                    Contactez-nous par email à
+                    <ul>
+                        <li>novatech025@gmail.com</li>
+                    </ul>
+                </li>
+                <li>
+                    par téléphone au :
+                    <ul>
+                        <li>+237651091118</li>
+                        <li>+237696552673</li>
+                        <li>+237674242398</li>
+                        <li>+237696697768</li>
+                    </ul>
+                </li>
+
+            </ul>
+            <h3>Nous sommes impatients de vous entendre !</h3>
+            <p>
+                "Un projet en tête ? Parlons-en !"<br>
+                "Besoin d'un conseil ? Contactez-nous !"<br>
+                "N'hésitez pas à nous contacter, nous sommes là pour vous aider !"<br>
+                "Votre satisfaction est notre priorité !"
+            </p>
+            </div>
+            
+        </div>
+        <div class="supcont-wrapper-right">
+            <div>
+                <div class="uk-overflow-hidden">
+                    <img src="{% static 'main/images/sable/images.jpeg' %}" width="550" height="550" alt="Example image"
+                        class="uk-animation-reverse uk-transform-origin-top-right"
+                        uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="sup-banner-form-body">
+        <div class="sup-banner-form-photo">
+            bonjour bro
+        </div>
+        <div class="sup-banner-form">
+
+            <div class="banner-form-content">
+                <div class="form-content__header">
+                    <div class="brutalist-card__icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="brutalist-card__alert">QUALISABLE</div>
+                </div>
+                <form class="uk-form-stacked" method="post" action="{% url 'main:contact' %}">
+                    {% csrf_token %}
+                    <p id="p1_form">
+                        Remplissez ce formulaire et nous vous contacterons
+                    </p>
+                    <div class="uk-margin">
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="form-stacked-text" type="text" name="nom">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="form-stacked-text" type="email" name="mail" required>
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <div class="uk-form-controls">
+                            <textarea class="uk-textarea" id="form-stacked-text" name="message" required></textarea>
+                        </div>
+                    </div>
+                    <p>
+                        noter que votre adresse e-mail ne sera jamais divulguée.
+                    </p>
+                    <div class="uk-margin">
+                        <div class="uk-form-controls">
+                            <button type="submit" name="envoi_cont" class="envoi_cont form-send_button">envoyer</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</section>
 {% endblock %}
