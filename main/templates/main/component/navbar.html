@@ -25,12 +25,12 @@
                         logo
                     </a>
                     <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="#">ACCUEIL</a></li>
+                        <li class="uk-active"><a href="/">ACCUEIL</a></li>
                         <li>
-                            <a href="#">SERVICES</a>
+                            <a href="{% url 'main:service' %}">SERVICES</a>
                         </li>
-                        <li><a href="#">REALISATIONS</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="{% url 'main:realisation' %}">REALISATIONS</a></li>
+                        <li><a href="{% url 'main:contact' %}">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
