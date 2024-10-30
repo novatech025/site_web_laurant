@@ -15,31 +15,40 @@ header {
 }
 
 header .header-top {
-    /* position: relative; */
     display: flex;
     height: 50px;
-    background-color: var(--color1);
+    background-color: var(--principal1-color);
     /* padding: 15px 0px; */
 }
 
 
-header .header-top .header-top-right {
+header .header-top .header-top-right,
+header .header-top .header-top-left {
     flex: 4;
     background-color: var(--second1-color);
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     color: white;
-    padding-right: 50px;
 }
 
-header .header-top .header-top-right .uk-icon-button {
+header .header-top .header-top-left {
+    flex: 4;
+    background-color: var(--second1-color);
+}
+
+header .header-top .header-top-left {
+    flex: 8;
+    background-color: var(--principal1-color);
+}
+
+header .header-top .header-top-right .uk-icon-button,
+header .header-top .header-top-left .uk-icon-button {
     /* background-color: transparent; */
     color: black;
     height: 30px;
     width: 30px;
 }
-
 
 
 header .uk-navbar-container {
@@ -66,6 +75,7 @@ header nav {
 .uk-navbar-nav>li>a {
     min-height: 10px !important;
 }
+
 header .uk-navbar-left a {
     color: white !important;
     font-weight: bold;
@@ -86,7 +96,7 @@ header .uk-navbar-container .uk-active a:hover {
 }
 
 header .uk-sticky-fixed {
-    background-color: var(--color-second1) !important;
+    background-color: var(--principal1-color) !important;
     color: white;
 }
 
@@ -98,18 +108,18 @@ header .uk-sticky-fixed {
     color: white;
     font-weight: bold;
     box-shadow:
-  0px 4.3px 3.1px rgba(0, 0, 0, 0.19),
-  0px 12px 8.5px rgba(0, 0, 0, 0.124),
-  0px 28.9px 20.5px rgba(0, 0, 0, 0.095),
-  0px 96px 68px rgba(0, 0, 0, 0.066);
+        0px 4.3px 3.1px rgba(0, 0, 0, 0.19),
+        0px 12px 8.5px rgba(0, 0, 0, 0.124),
+        0px 28.9px 20.5px rgba(0, 0, 0, 0.095),
+        0px 96px 68px rgba(0, 0, 0, 0.066);
 }
 
 .pass_command_btn:hover {
     color: white;
     text-decoration: none;
     box-shadow:
-  0px 5.3px 3.1px rgba(0, 0, 0, 0.42),
-  0px 14.7px 8.5px rgba(0, 0, 0, 0.274),
-  0px 35.3px 20.5px rgba(0, 0, 0, 0.21),
-  0px 117px 68px rgba(0, 0, 0, 0.146);
+        0px 5.3px 3.1px rgba(0, 0, 0, 0.42),
+        0px 14.7px 8.5px rgba(0, 0, 0, 0.274),
+        0px 35.3px 20.5px rgba(0, 0, 0, 0.21),
+        0px 117px 68px rgba(0, 0, 0, 0.146);
 }

@@ -9,16 +9,18 @@
 
     
     --second1-color:#EAC435;
-    --second1-color:#F0D866;
-    --second1-color:#EAEAB8;
-    --second1-color:#F2D47C;
-    --second1-color:#FFEB9C;
-    --second1-color:#fff0c2f2;
+    --second2-color:#F0D866;
+    --second3-color:#EAEAB8;
+    --second4-color:#F2D47C;
+    --second5-color:#FFEB9C;
+    --second6-color:#fff0c2f2;
 
     --radius: 45px;
 }
 
 * {
-    font-family: 'Courier New', Courier, monospace !important;
+    /* font-family: 'Courier New', Courier, monospace !important; */
+    /* font-family: 'Times New Roman', Times, serif !important; */
+    font-family: sans-serif !important;
 
 }

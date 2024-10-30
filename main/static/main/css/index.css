@@ -1,17 +1,3 @@
-
-/* .home-content {
-    height: 60vh; */
-    /* position: relative;
-    padding: 20px 10%; */
-    /* background-size: contain; */
-    /* box-sizing: content-box; */
-    /* background-image: url("../images/sable/product-jpeg-1000x1000.jpg"); */
-    /* background-image: url("../images/sable/SAM_1518.JPG"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* background-position: center;
-} */
-
 .home-content-banner {
     /* position: absolute; */
     /* top: 0px; */
@@ -22,12 +8,7 @@
 
     /* padding: 10px 5%; */
     box-sizing: border-box;
-    /* background: linear-gradient(90deg, var(--color1)40%, transparent 100%); */
-    /* display: flex; */
-    /* align-items: center; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* background-color: rgba(0, 0, 0, 0.7); */
+
 }
 
 
@@ -38,79 +19,12 @@
 }
 
 .home-content-banner .uk-slideshow-items h2 {
-    /* color: var(--principal1-color) !important; */
     font-weight: bold;
     color: white;
     font-size: 50px;
     z-index: 5;
-
-    /* background: #FFFFFF;
-background: linear-gradient(to right, #FFFFFF 0%, #E77021 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent; */
-text-shadow: -1px 4px 3px rgba(0, 0, 0, 0.61);}
-
-
-.home-content-banner .uk-slideshow-items p {
-    color: white;
-    width: 65%;
-    z-index: 5;
+    text-shadow: -1px 4px 3px rgba(0, 0, 0, 0.61);
 }
-
-
-.home-content-banner .uk-slideshow-items .uk-text-center {
-    background-color: rgba(0, 0, 0, 0.4);
-
-/* .home-content { */
-    /* height: 60vh; */
-    /* position: relative; */
-    /* padding: 20px 10%; */
-    /* background-size: contain; */
-    /* box-sizing: content-box; */
-    /* background-image: url("../images/sable/product-jpeg-1000x1000.jpg"); */
-    /* background-image: url("../images/sable/SAM_1518.JPG"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* background-position: center; */
-}
-
-.home-content-banner {
-    /* position: absolute; */
-    /* top: 0px; */
-    /* left: 0px; */
-    width: 100%;
-    /* height: 50vh; */
-    height: 50vh !important;
-
-    /* padding: 10px 5%; */
-    box-sizing: border-box;
-    /* background: linear-gradient(90deg, var(--color1)40%, transparent 100%); */
-    /* display: flex; */
-    /* align-items: center; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* background-color: rgba(0, 0, 0, 0.7); */
-}
-
-
-
-.home-content-banner .uk-slideshow-items {
-    height: 70vh !important;
-    padding: 0px;
-}
-
-.home-content-banner .uk-slideshow-items h2 {
-    /* color: var(--principal1-color) !important; */
-    font-weight: bold;
-    color: white;
-    font-size: 50px;
-    z-index: 5;
-
-    /* background: #FFFFFF;
-background: linear-gradient(to right, #FFFFFF 0%, #E77021 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent; */
-text-shadow: -1px 4px 3px rgba(0, 0, 0, 0.61);}
 
 
 .home-content-banner .uk-slideshow-items p {
@@ -123,14 +37,6 @@ text-shadow: -1px 4px 3px rgba(0, 0, 0, 0.61);}
 .home-content-banner .uk-slideshow-items .uk-text-center {
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* margin: 0px !important;
-    padding: 0px !important; */
-    box-sizing: border-box;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -146,13 +52,10 @@ text-shadow: -1px 4px 3px rgba(0, 0, 0, 0.61);}
     top: 0px;
     /* bottom: 30px;
     left: 60px; */
-    /* bottom: 30px;
-    left: 60px; */
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-
 
 }
 
@@ -165,7 +68,7 @@ text-shadow: -1px 4px 3px rgba(0, 0, 0, 0.61);}
 
 
 
-/* From Uiverse.io by 0xnihilism */ 
+/* From Uiverse.io by 0xnihilism */
 .brutalist-card {
     width: 320px;
     border: 4px solid var(--principal1-color);
@@ -173,72 +76,40 @@ text-shadow: -1px 4px 3px rgba(0, 0, 0, 0.61);}
     padding: 1.5rem;
     box-shadow: 10px 10px 0 var(--principal1-color);
     font-family: "Arial", sans-serif;
-  }
-  
-  .brutalist-card__header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid var(--principal1-color);
-    padding-bottom: 1rem;
-  }
-  
-  .brutalist-card__icon {
-    flex-shrink: 0;
-  }
-  .sup-banner-card {
-    /* position: absolute;
-    bottom: 30px;
-    left: 60px; */
-    margin-left: 5%;
 }
 
-
-
-/* From Uiverse.io by 0xnihilism */ 
-.brutalist-card {
-    width: 320px;
-    border: 4px solid var(--principal1-color);
-    background-color: #fff;
-    padding: 1.5rem;
-    box-shadow: 10px 10px 0 var(--principal1-color);
-    font-family: "Arial", sans-serif;
-  }
-  
-  .brutalist-card__header {
+.brutalist-card__header {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
     border-bottom: 2px solid var(--principal1-color);
     padding-bottom: 1rem;
-  }
-  
-  .brutalist-card__icon {
+}
+
+.brutalist-card__icon {
     flex-shrink: 0;
     display: flex;
-    align-items: center;
     align-items: center;
     justify-content: center;
     background-color: var(--principal1-color);
     padding: 0.5rem;
-  }
-  
-  .brutalist-card__icon svg {
+}
+
+.brutalist-card__icon svg {
     height: 1.5rem;
     width: 1.5rem;
     fill: #fff;
-  }
-  
-  .brutalist-card__alert {
+}
+
+.brutalist-card__alert {
     font-weight: 900;
     color: var(--principal1-color);
     font-size: 1.5rem;
     text-transform: uppercase;
-  }
-  
-  .brutalist-card__message {
+}
+
+.brutalist-card__message {
     margin-top: 1rem;
     color: black;
     font-size: 0.9rem;
@@ -247,56 +118,13 @@ text-shadow: -1px 4px 3px rgba(0, 0, 0, 0.61);}
     padding-bottom: 1rem;
     font-weight: 600;
     /* font-family: 'Times New Roman', Times, serif !important; */
-  }
-  
-  .brutalist-card__actions {
+}
+
+.brutalist-card__actions {
     margin-top: 1rem;
-  }
-  
-  .brutalist-card__button {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: 3px solid var(--principal1-color);
-    background-color: #fff;
-    color: var(--principal1-color);
-    background-color: var(--principal1-color);
-    padding: 0.5rem;
-  }
-  
-  .brutalist-card__icon svg {
-    height: 1.5rem;
-    width: 1.5rem;
-    fill: #fff;
-  }
-  
-  .brutalist-card__alert {
-    font-weight: 900;
-    color: var(--principal1-color);
-    font-size: 1.5rem;
-    text-transform: uppercase;
-  }
-  
-  .brutalist-card__message {
-    margin-top: 1rem;
-    color: black;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    border-bottom: 2px solid var(--principal1-color);
-    padding-bottom: 1rem;
-    font-weight: 600;
-    /* font-family: 'Times New Roman', Times, serif !important; */
-  }
-  
-  .brutalist-card__actions {
-    margin-top: 1rem;
-  }
-  
-  .brutalist-card__button {
+}
+
+.brutalist-card__button {
     display: block;
     width: 100%;
     padding: 0.75rem;
@@ -313,89 +141,71 @@ text-shadow: -1px 4px 3px rgba(0, 0, 0, 0.61);}
     overflow: hidden;
     text-decoration: none;
     margin-bottom: 1rem;
-  }
-  
-  .brutalist-card__button--read {
+}
+
+.brutalist-card__button--read {
     background-color: var(--principal1-color);
     color: #fff;
-  }
-  
-  .brutalist-card__button::before {
-    content: "";
-    transition: all 0.2s ease;
-    box-shadow: 5px 5px 0 var(--principal1-color);
-    overflow: hidden;
-    text-decoration: none;
-    margin-bottom: 1rem;
-  }
-  
-  .brutalist-card__button--read {
-    background-color: var(--principal1-color);
-    color: #fff;
-  }
-  
-  .brutalist-card__button::before {
+}
+
+.brutalist-card__button::before {
     content: "";
     position: absolute;
     top: 0;
     left: -100%;
-    top: 0;
-    left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-      120deg,
-      transparent,
-      rgba(255, 255, 255, 0.3),
-      transparent
-    );
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.3),
+            transparent);
     transition: all 0.6s;
-  }
-  
-  .brutalist-card__button:hover::before {
+}
+
+.brutalist-card__button:hover::before {
     left: 100%;
-  }
-  
-  .brutalist-card__button:hover {
+}
+
+.brutalist-card__button:hover {
     transform: translate(-2px, -2px);
     box-shadow: 7px 7px 0 #000;
     text-decoration: none;
-  }
-  
-  .brutalist-card__button--mark {
+}
+
+.brutalist-card__button--mark {
     color: var(--principal1-color) !important;
-  }
-  
-  
-  .brutalist-card__button--mark:hover {
+}
+
+
+.brutalist-card__button--mark:hover {
     background-color: #296fbb;
     border-color: #296fbb;
     color: #fff;
     box-shadow: 7px 7px 0 #004280;
-  }
-  
-  .brutalist-card__button--read:hover {
+}
+
+.brutalist-card__button--read:hover {
     background-color: #ff0000;
     border-color: #ff0000;
     color: #fff;
     box-shadow: 7px 7px 0 #800000;
-  }
-  
-  .brutalist-card__button:active {
+}
+
+.brutalist-card__button:active {
     transform: translate(5px, 5px);
     box-shadow: none;
-  }
-  
+}
 
 
-/* .first-Wrapper,
+
+.first-Wrapper,
 .second-wrapper,
 .third-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2.5%;
-    height: 100px; 
+    /* height: 100px; */
     margin-top: 400px;
 }
 
@@ -405,9 +215,9 @@ text-shadow: -1px 4px 3px rgba(0, 0, 0, 0.61);}
 .third-wrapper-left {
     width: 45%;
 }
+
 .first-Wrapper-right,
 .second-wrapper-right,
 .third-wrapper-right {
     width: 45%;
 }
- */
