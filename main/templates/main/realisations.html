@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!--code html ici-->
+<link rel="stylesheet" href="{% static 'main/css/services.css' %}">
+  <section class="uk-section">
+    <div class="uk-container">
+      <h2 class="text service uk-heading-medium">Nos Realisations</h2>
+      <div class="uk-child-width-1-3@m" uk-grid>
+
+        {% for realisation in realisations %}
+         <!-- {{service.title}} -->
+        <div>
+          <div class="uk-card uk-card-default">
+            <div class="uk-inline">
+            <img src="{{ realisation.image.url }}" alt="{{realisation.title}}" width="1800" height="1200">
+
+            <div class="text uk-overlay uk-overlay-default uk-position-bottom">
+                <p>{{realisation.service.sable.type}}</p>
+            </div>
+        </div>
+
+            <div class="uk-card-body">
+
+              <h3 class="uk-card-title">{{realisation.title}} </h3>
+              <p>{{realisation.description}}</p>
+              <span class="card-date">{{realisation.date}}</span>
+            </div>
+
+          </div>
+        </div>
+
+        {% endfor %}
+      </div>
+
+    </div>
+  </section>
+{% endblock %}

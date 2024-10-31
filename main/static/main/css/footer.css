@@ -2,10 +2,86 @@ footer{
     height: 40vh;
     width: 100%;
     background-color: var(--principal1-color);
-    
+    background-color: #1d0e00;
+    margin: 0px;
 }
 
 .footer-content{
     background-color: var(--principal1-color);
+    background-color: #1d0e00;
+    display: flex;
+    padding: 6%;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin: 0px;
+}
 
+.footer-content h3 {
+    color: white;
+    font-weight: bold;
+}
+
+.footer-logo-div {
+    width: 25%;
+    color: white;
+}
+
+.footer-logo-div h4 {
+    color: white;
+
+}
+
+.plan-site-div {
+    padding: 20px;
+
+}
+
+.plan-site-div ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.plan-site-div li {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-top: 10px;
+}
+
+.plan-site-div li a {
+    color: white;
+
+}
+
+.plan-site-div li a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.location-div {
+    padding: 20px;
+    color: white;
+}
+
+.location-div h4 {
+    color: hwb(0 100% 0%);
+}
+
+
+footer .my-line {
+    background-color: var(--principal2-color);
+    height: 5px;
+    /* width: 90%; */
+
+}
+
+
+.bottom-footer-div {
+    background-color: var(--principal1-color);
+    padding: 20px 5%;
+    text-align: center;
+}
+.bottom-footer-div em {
+    color: white;
+}
+.bottom-footer-div a {
+    color: var(--second1-color)
 }
