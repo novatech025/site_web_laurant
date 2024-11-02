@@ -4,14 +4,14 @@
     position: relative;
 } */
 
-.contact .uk-height-medium{
+.contact .uk-height-medium {
     height: 60vh;
     position: relative;
 }
 
-.contact .uk-height-medium .contact-banner{
+.contact .uk-height-medium .contact-banner {
     position: absolute;
-    background: linear-gradient(90deg , var(--principal1-color)35%, transparent 100%);
+    background: linear-gradient(90deg, var(--principal1-color)35%, transparent 100%);
     width: 100%;
     height: 100%;
     display: flex;
@@ -20,51 +20,87 @@
     padding: 10px 5%;
     align-items: start;
     transition: all 1s;
-    
-    
+
+
 }
 
 /* .contact .uk-height-medium .contact-banner:hover{
     background: linear-gradient(90deg , var(--principal1-color)40%, transparent 100%);
 } */
 
-.contact-banner h2{
+.contact-banner h2 {
     font-weight: bold;
     color: #fff;
     font-size: 40px;
 
 }
 
-.contact-banner p{
+.contact-banner p {
     width: 45%;
     font-size: 1.5rem;
 
 }
 
-section .supcont-wrapper{
+section .supcont-wrapper {
     display: flex;
     padding: 10px 5%;
+    background-color: #fff;
 }
 
-.question-info{
-    padding: 0px 5%;
-    margin-top: 20px;
+.question-info {
+    width: 100%;
+    background-color: var(--second6-color);
+    display: flex;
 }
 
-.question-info .uk-card-body{
-    
-    /* padding: 10px 10%; */
+/* .question-info .uk-container .uk-grid-match .right p {
+    width: 45%;
+    padding: 10px;
+} */
+
+.question-info .p1 {
+    border-left: 10px solid black;
+}
+
+.question-info .p2 {
+    border-right: 10px solid black;
+}
+
+
+.question-info .uk-card-body {
     color: #000;
-
 }
 
-section .supcont-wrapper .supcont-wrapper-left{
+/* .div1 {
+    display: inline-block;
+    background-color: RGBa(240, 160, 0, 0.5);
+    height: 100px;
+    width: 100px;
+    margin: 50px 5px;
+    transform: skewX(-30deg);
+
+
+} */
+
+/* @keyframes rotation {
+    0% {
+        transform: perspective(50px) rotate3d(1, 1, 1, 0deg);
+    }
+
+    50% {
+        transform: perspective(50px) rotate3d(1, 1, 1, 180deg);
+    }
+
+    100% {
+        transform: perspective(50px) rotate3d(1, 1, 1, 360deg);
+    }
+} */
+
+section .supcont-wrapper .supcont-wrapper-left {
     flex: 8;
-    /* padding: 10px 5%; */
-    
 }
 
-section .supcont-wrapper .supcont-wrapper-right{
+section .supcont-wrapper .supcont-wrapper-right {
     flex: 6;
     padding-left: 5%;
 }
@@ -73,12 +109,12 @@ section .supcont-wrapper .supcont-wrapper-right{
     transform: rotate(5deg);
 } */
 
-.supcont-wrapper-right .uk-overflow-hidden{
+.supcont-wrapper-right .uk-overflow-hidden {
     width: 100%;
     height: 100%;
 }
 
-.sup-banner-form-body{
+.sup-banner-form-body {
     /* position: absolute;
     top: 0; */
     /* width: 100%;
@@ -88,7 +124,7 @@ section .supcont-wrapper .supcont-wrapper-right{
     padding: 10px 10%;
 }
 
-.sup-banner-form{
+.sup-banner-form {
     margin-left: 5%;
     flex: 6;
     display: flex;
@@ -97,13 +133,13 @@ section .supcont-wrapper .supcont-wrapper-right{
     padding-bottom: 3%;
 }
 
-.sup-banner-form-photo{
+.sup-banner-form-photo {
     flex: 6;
     width: 50%;
 }
 
 
-.banner-form-content{
+.banner-form-content {
     width: 60%;
     border: 4px solid var(--principal1-color);
     background-color: #fff;
@@ -111,7 +147,7 @@ section .supcont-wrapper .supcont-wrapper-right{
     box-shadow: 10px 10px 0 var(--principal1-color);
 }
 
-.form-content__header{
+.form-content__header {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -120,7 +156,7 @@ section .supcont-wrapper .supcont-wrapper-right{
     padding-bottom: 1rem;
 }
 
-.brutalist-card__icon{
+.brutalist-card__icon {
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -135,14 +171,14 @@ section .supcont-wrapper .supcont-wrapper-right{
     fill: #fff;
 }
 
-.brutalist-card__alert{
+.brutalist-card__alert {
     font-weight: 900;
     color: var(--principal1-color);
     font-size: 1.5rem;
     text-transform: uppercase;
 }
 
-.uk-form-stacked{
+.uk-form-stacked {
     margin-top: 1rem;
     color: black;
     font-size: 0.9rem;
@@ -152,7 +188,7 @@ section .supcont-wrapper .supcont-wrapper-right{
     font-weight: 600;
 }
 
-.envoi_cont{
+.envoi_cont {
     display: block;
     width: 100%;
     padding: 0.75rem;
@@ -212,7 +248,7 @@ section .supcont-wrapper .supcont-wrapper-right{
     box-shadow: none;
 }
 
-.supcont-wrapper-left h3{
+.supcont-wrapper-left h3 {
     color: var(--principal1-color);
 }
 

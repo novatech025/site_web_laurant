@@ -61,8 +61,19 @@ header .uk-navbar-container {
 
 header nav {
     background-color: #1d0e00 !important;
+    height: 13vh;
+    padding-left: 0px;
 }
 
+header nav .uk-container,
+header nav .uk-container .uk-navbar {
+    height: 100% !important;
+    width: 100%;
+}
+
+header nav .uk-container {
+    margin: 0px;
+}
 
 
 /* uk-navbar-container  */
@@ -101,7 +112,7 @@ header .uk-sticky-fixed {
 }
 
 
-.pass_command_btn {
+/* .pass_command_btn {
     background-color: var(--principal1-color);
     padding: 20px 50px;
     border-radius: var(--radius);
@@ -122,4 +133,4 @@ header .uk-sticky-fixed {
         0px 14.7px 8.5px rgba(0, 0, 0, 0.274),
         0px 35.3px 20.5px rgba(0, 0, 0, 0.21),
         0px 117px 68px rgba(0, 0, 0, 0.146);
-}
+} */

@@ -7,7 +7,7 @@
 <footer>
     <div class="footer-content">
         <div class="footer-logo-div">
-            <a href="#">Logo</a>
+            <a href="/">Logo</a>
             <h4>Votre partenaire idéal pour tous vos besoins en sable.</h4>
             <!-- <a class="pass_command_btn" href="#">NOUS CONTACTER</a>
             <a class="brutalist-card__button brutalist-card__button--mark" href="#">NOUS CONTACTER</a> -->
@@ -16,9 +16,9 @@
         <div class="plan-site-div">
             <h3>Plan du site</h3>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Réalisations</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="{% url 'main:realisation' %}">Réalisations</a></li>
+                <li><a href="{% url 'main:contact' %}">Contact</a></li>
             </ul>
         </div>
         <div class="location-div">
