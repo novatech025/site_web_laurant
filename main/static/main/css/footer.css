@@ -160,3 +160,20 @@ footer .my-line {
     transform: translate(5px, 5px);
     box-shadow: none;
 }
+
+
+
+@media screen and (max-width: 901px) {
+
+.footer-content{
+    flex-direction: column;
+    padding: 2%;
+    /* align-items: center; */
+}
+
+.footer-logo-div {
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}

@@ -23,7 +23,7 @@
 
 .home-content-banner .uk-slideshow-items p {
     color: white;
-    width: 65%;
+    width: 45%;
     z-index: 5;
 }
 
@@ -46,13 +46,11 @@
     height: 100%;
     display: flex;
     align-items: center;
-
 }
 
 .sup-banner-card {
     margin-left: 5%;
 }
-
 
 
 .brutalist-card {
@@ -87,6 +85,7 @@
     width: 1.5rem;
     fill: #fff;
 }
+
 
 .brutalist-card__alert {
     font-weight: 900;
@@ -185,7 +184,6 @@
 .div-vente-achat {
     display: flex;
     height: 800px;
-    /* margin-top: 200px; */
     padding: 120px 5%;
     gap: 10%;
     text-wrap: balance;
@@ -194,13 +192,11 @@
 
 .div-vente-achat-left {
     flex: 1;
-
 }
 
 .home-title {
     font-size: 60px;
     text-wrap: balance;
-
 }
 
 .home-title span {
@@ -208,7 +204,6 @@
     font-size: 60px;
     font-weight: bold;
     text-wrap: balance;
-
 }
 
 .div-vente-achat-left p {
@@ -230,7 +225,6 @@
 }
 
 .div-vente-achat-left .brutalist-card__button {
-    /* width: 70%; */
     margin-top: 80px;
 }
 
@@ -239,7 +233,6 @@
     flex: 1;
     position: relative;
 }
-
 
 
 .div-vente-achat-right img {
@@ -257,7 +250,6 @@
 
 .div-vente-achat-right img:nth-child(2) {
     top: 20px;
-    /* left: 20px; */
 }
 
 .div-vente-achat-right img:nth-child(3) {
@@ -310,11 +302,9 @@
 
 
 .advice-div {
-    /* height: 70vh; */
     display: flex;
     padding: 120px 6%;
     gap: 10%;
-    /* margin: 60px 0px; */
 }
 
 .advice-div > div {
@@ -322,23 +312,14 @@
 }
 
 .advice-div-left {
-    /* background-color: red; */
     text-align: center;
-    /* transform: rotate(180deg); */
-    /* transform: f; */
     border-right: 5px solid var(--second1-color);
     border-bottom: 5px solid white;
-    /* border-top: 2px solid white;
-    border-left: 2px solid white; */
     padding: 10px;
     position: relative;
 }
 
 
-/* .advice-div-left .expert {
-    transform: rotateY(180deg);
-
-} */
 
 .advice-div-right .brutalist-card__button {
     width: 70%;
@@ -520,105 +501,107 @@
 
 
 
+@media screen and (max-width: 901px) {
+
+    .home-content-banner .uk-slideshow-items h2 {
+        font-size: 30px;
+    }
 
 
-
-
-/* 
-.one-testimony-card {
-    background-color: white;
-    height: 400px;
-    width: 400px;
-    box-sizing: border-box;
-    padding-top: 3%;
-    padding-left: 5%;
-    padding-bottom: 1%;
-    padding-right: 1%;
-    box-shadow:
-    1.1px 2.1px 2px -10px rgba(0, 0, 0, 0.11),
-    2.5px 5.1px 4.9px -10px rgba(0, 0, 0, 0.079),
-    4.8px 9.5px 9.3px -10px rgba(0, 0, 0, 0.066),
-    8.5px 17px 16.5px -10px rgba(0, 0, 0, 0.055),
-    15.9px 31.8px 30.9px -10px rgba(0, 0, 0, 0.044),
-    38px 76px 74px -10px rgba(0, 0, 0, 0.031);
-    border-radius: 10px;
-    position: relative;
+.home-content-banner {
+    height: 20vh !important;
 }
 
-.one-testimony-card-bar {
-    position: absolute;
-    top: 0px;
-    left: 9%;
-    height: 100%;
-    width: 80px;
-    background-color: var(--second1-color);
+.home-content-banner .uk-slideshow-items {
+    height: 30vh !important;
 
 }
 
-.sous-one-testimony-card {
-    height: 100%;
-    width: 100%;
-    background-color: var(--principal1-color);
-    box-sizing: border-box;
-    border-radius: 15px;
-    position: relative;
-}
-
-.sur-one-testimony-card {
-        position: absolute;
-        top: 0;
-        left: -10%;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        gap: 5%;
-}
-
-.one-testimony-card-img {
-    height: 50%;
-    flex: 1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 40px;
-    box-shadow: 1.1px 3.4px 2.6px rgba(0, 0, 0, 0.11),
-  2.5px 8.2px 6.3px rgba(0, 0, 0, 0.079),
-  4.8px 15.5px 11.9px rgba(0, 0, 0, 0.066),
-  8.5px 27.7px 21.2px rgba(0, 0, 0, 0.055),
-  15.9px 51.8px 39.7px rgba(0, 0, 0, 0.044),
-  38px 124px 95px rgba(0, 0, 0, 0.031);
-
-}
-
-.one-testimony-card-content {
-    flex: 3;
-}
-
-
-.one-testimony-card-content h3 {
+.home-content-banner .uk-slideshow-items h2 {
+    font-size: 25px;
     margin: 0px;
 }
 
-.one-testimony-card-content p {
-    display: flex;
+.home-content-banner .uk-slideshow-items p {
+    width: 80%;
+}
+
+
+    .brutalist-card {
+        display: none;
+    }
+
+.div-vente-achat {
     flex-direction: column;
-    margin: 0px;
+    height: 180vh;
+    gap: 2%;
+}
+
+.div-vente-achat div {
+    flex: 1;
+}
+.div-vente-achat-left .brutalist-card__button {
+    margin-top: 40px;
+}
+
+.div-vente-achat-right img {
+    max-width: 150px;
+    max-height: 150px;
 
 }
 
-.one-testimony-card-content p::before {
-    content: url("data:image/svg+xml;utf8,<svg width='30' height='30' xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'><path fill-rule='evenodd' d='M6 6a2 2 0 0 0-2 2v3c0 1.1.9 2 2 2h3a3 3 0 0 1-3 3H5a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2H6Zm9 0a2 2 0 0 0-2 2v3c0 1.1.9 2 2 2h3a3 3 0 0 1-3 3h-1a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2h-3Z' clip-rule='evenodd'/></svg>");
-  }
+    .home-title {
+        font-size: 30px;
+    
+    }
 
+.home-title span {
+    font-size: 30px;
 
-.one-testimony-card-content hr {
-    background-color: var(--second1-color);
-    height: 5px;
-    margin: 3px 0px;
 }
 
-.one-testimony-card-content i {
-    color: var(--second2-color);
-    font-size: 12px;
-} */
+
+
+.livraison-div {
+    height: 100vh;
+    flex-direction: column-reverse;
+}
+
+
+.livraison-div-left-img {
+    bottom: 10px;
+    right: 10px;
+}
+
+.advice-div {
+    flex-direction: column;
+    gap: 10%;
+}
+
+
+.parallax-div {
+    height: 400px;
+}
+
+.parallax-div h2 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.parallax-div p:nth-child(3):before {
+    content: url("data:image/svg+xml;utf8,<svg width='40' height='40' xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'><path fill-rule='evenodd' d='M6 6a2 2 0 0 0-2 2v3c0 1.1.9 2 2 2h3a3 3 0 0 1-3 3H5a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2H6Zm9 0a2 2 0 0 0-2 2v3c0 1.1.9 2 2 2h3a3 3 0 0 1-3 3h-1a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2h-3Z' clip-rule='evenodd'/></svg>");
+}
+
+.parallax-div p:nth-child(3)::after {
+    content: url("data:image/svg+xml;utf8,<svg width='40' height='40' xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'><path fill-rule='evenodd' d='M6 6a2 2 0 0 0-2 2v3c0 1.1.9 2 2 2h3a3 3 0 0 1-3 3H5a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2H6Zm9 0a2 2 0 0 0-2 2v3c0 1.1.9 2 2 2h3a3 3 0 0 1-3 3h-1a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2h-3Z' clip-rule='evenodd'/></svg>");
+}
+
+
+.testimony-head {
+    text-align: start;
+    align-items: start;
+    width: 90%;
+}
+
+}
