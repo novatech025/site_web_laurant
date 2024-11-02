@@ -22,17 +22,17 @@ header .header-top {
 header .header-top .header-top-right,
 header .header-top .header-top-left {
     flex: 4;
-    background-color: var(--second1-color);
+    background-color: var(--principal1-color);
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
 }
 
-header .header-top .header-top-left {
+/* header .header-top .header-top-left {
     flex: 4;
     background-color: var(--second1-color);
-}
+} */
 
 header .header-top .header-top-left {
     flex: 8;
@@ -55,8 +55,19 @@ header .uk-navbar-container {
 
 header nav {
     background-color: #1d0e00 !important;
+    height: 13vh;
+    padding-left: 0px;
 }
 
+header nav .uk-container,
+header nav .uk-container .uk-navbar {
+    height: 100% !important;
+    width: 100%;
+}
+
+header nav .uk-container {
+    margin: 0px;
+}
 
 
 /* uk-navbar-container  */
