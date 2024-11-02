@@ -22,17 +22,17 @@ header .header-top {
 header .header-top .header-top-right,
 header .header-top .header-top-left {
     flex: 4;
-    background-color: var(--second1-color);
+    background-color: var(--principal1-color);
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
 }
 
-header .header-top .header-top-left {
+/* header .header-top .header-top-left {
     flex: 4;
     background-color: var(--second1-color);
-}
+} */
 
 header .header-top .header-top-left {
     flex: 8;
@@ -106,7 +106,7 @@ header .uk-sticky-fixed {
 }
 
 
-/* .pass_command_btn {
+.pass_command_btn {
     background-color: var(--principal1-color);
     padding: 20px 50px;
     border-radius: var(--radius);
