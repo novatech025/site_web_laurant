@@ -21,7 +21,7 @@ header .header-top {
 
 header .header-top .header-top-right,
 header .header-top .header-top-left {
-    flex: 4;
+    flex: 6;
     background-color: var(--principal1-color);
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@ header .header-top .header-top-left {
 } */
 
 header .header-top .header-top-left {
-    flex: 8;
+    flex: 6;
     background-color: var(--principal1-color);
 }
 
