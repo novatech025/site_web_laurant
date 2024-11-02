@@ -1,5 +1,4 @@
 * {
-    /* margin: 0; */
     box-sizing: border-box;
 }
 
@@ -11,14 +10,12 @@ header {
         0px 31px 15.3px -8px rgba(0, 0, 0, 0.04),
         0px 85px 42px -8px rgba(0, 0, 0, 0.028);
     width: 100%;
-
 }
 
 header .header-top {
     display: flex;
     height: 50px;
     background-color: var(--principal1-color);
-    /* padding: 15px 0px; */
 }
 
 
@@ -44,7 +41,6 @@ header .header-top .header-top-left {
 
 header .header-top .header-top-right .uk-icon-button,
 header .header-top .header-top-left .uk-icon-button {
-    /* background-color: transparent; */
     color: black;
     height: 30px;
     width: 30px;
@@ -53,8 +49,6 @@ header .header-top .header-top-left .uk-icon-button {
 
 header .uk-navbar-container {
     background-color: white !important;
-    /* position: sticky;
-    top: 0; */
     width: 100%;
 
 }
@@ -133,4 +127,32 @@ header .uk-sticky-fixed {
         0px 14.7px 8.5px rgba(0, 0, 0, 0.274),
         0px 35.3px 20.5px rgba(0, 0, 0, 0.21),
         0px 117px 68px rgba(0, 0, 0, 0.146);
-} */
+}
+
+
+
+@media screen and (max-width: 901px) {
+    .my-mobile-header {
+        background-color: var(--principal1-color);
+        padding: 10px 20px;
+    }
+
+
+    .my-mobile-header .uk-sticky-below {
+        background-color: yellow;
+        height: 100px !important;
+        width: 100% !important;
+
+    }
+
+    .my-mobile-header .uk-navbar-left a {
+        /* background-color: orange; */
+        /* padding: 0px !important;
+        height: 50px !important; */
+    }
+
+    .my-mobile-header .uk-navbar-toggle {
+        min-height: 30px !important;
+    }
+
+}

@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{% static 'main/css/navbar.css' %}">
 
 
-<header>
+<header class="uk-visible@m">
     <div class="header-top">
         <div class="header-top-left">
             <a href="tel:+33123456789" class="uk-icon-button  uk-margin-small-right" uk-icon="receiver"></a>
@@ -39,3 +39,38 @@
         </div>
     </nav>
 </header>
+<div>
+    <nav uk-sticky="start: 25vh; animation: uk-animation-slide-top" class="uk-navbar-container">
+        <div uk-navbar="dropbar: true" class="my-mobile-header uk-hidden@m">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- <header  class="uk-hidden@m"> -->
+<!-- <nav class="start: 25vh; uk-navbar-container" uk-navbar="mode: click">
+        <div class="uk-container">
+            <div uk-navbar>
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="#">Active</a></li>
+                            <li><a href="#">Item</a></li>
+                            <li><a href="#">Item</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav> -->
+<!-- </header> -->
