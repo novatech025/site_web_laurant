@@ -14,9 +14,14 @@ class SableAdmin(admin.ModelAdmin):
     list_display = ('type', 'price', 'description')
     search_fields = ['type', ]
 
+class TestimonialAdmin(admin.ModelAdmin):
+    list_display = ('name', 'role', 'comment','stars','photo')
+    search_fields = ['name', ]
+
 admin.site.register(Sable,SableAdmin)
 admin.site.register(Service,ServiceAdmin)
 admin.site.register(Realisation,RealisationAdmin)
+admin.site.register(Testimonial,TestimonialAdmin)
 
 ets='QUALISABLE'
 admin.site.site_title=ets

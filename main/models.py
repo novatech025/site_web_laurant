@@ -42,3 +42,23 @@ class Message_User(models.Model):
 
     def __str__(self):
         return self.name
+
+
+
+class Testimonial(models.Model):
+    name = models.CharField(max_length=100,verbose_name="Nom")
+    photo = models.ImageField(upload_to='testimonials/')
+    role = models.CharField(max_length=100 , verbose_name="Métier")
+    comment = models.TextField(verbose_name="Commentaire")
+    stars = models.PositiveIntegerField(default=5,verbose_name="étoiles")
+
+    def __str__(self):
+        return f"{self.name} - {self.role}"
+
+    def get_star_rating(self):
+        return "★" * self.stars + "☆" * (5 - self.stars)
+
+    class Meta:
+        verbose_name = "Témoignage"
+        verbose_name_plural = "Témoignages"
+        ordering = ['-id']
