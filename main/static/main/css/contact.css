@@ -18,7 +18,7 @@
 
 }
 
-.contact-banner h2 {
+/* .contact-banner h2 {
     font-weight: bold;
     color: #fff;
     font-size: 40px;
@@ -29,7 +29,7 @@
     width: 45%;
     font-size: 1.5rem;
 
-}
+} */
 
 section .supcont-wrapper {
     display: flex;
@@ -45,28 +45,29 @@ section .supcont-wrapper {
     display: flex;
 }
 
-.div1 h2:first-child{
+.div1 h2:first-child {
     font-weight: bold;
     font-size: 3.5rem;
     color: var(--second1-color);
     padding-bottom: 20px;
-    
+
 }
 
 
-.localisation-banner-info-right .icon{
-    font-size: 2rem;
+.localisation-banner-info-right .icon {
+    font-size: 1rem;
     color: var(--second1-color);
 }
-.localisation-banner-info-right .text{
-    font-size: 2rem;
+
+.localisation-banner-info-right .text {
+    /* font-size: 2rem; */
     margin-left: 15px;
 }
 
 /* ##### section numero tel gauche ######## */
 
 .sup-banner-form-text .content h2:first-child,
-.localisation-banner-info-left .content h2:first-child{
+.localisation-banner-info-left .content h2:first-child {
     font-weight: bold;
     font-size: 3.5rem;
     color: var(--principal1-color);
@@ -74,46 +75,16 @@ section .supcont-wrapper {
 }
 
 
-.localisation-banner-info-left .content p{
-    font-size: 2rem;
-}
-
-
-/* section .supcont-wrapper .supcont-wrapper-left {
-    flex: 8;
-}
-
-section .supcont-wrapper .supcont-wrapper-right {
-    flex: 6;
-    padding-left: 5%;
-}
-
-
-
-.supcont-wrapper-right .uk-overflow-hidden {
-    width: 100%;
-    height: 100%;
-} */
-
-/* ####### sup-banner-form-text ############# */
-/* 
-.sup-banner-form-text{
-    flex: 6;
-} */
-
-.sup-banner-form-text .content h2:first-child{
+.sup-banner-form-text .content h2:first-child {
     font-weight: bold;
     font-size: 3rem;
     color: var(--principal1-color);
 }
-.sup-banner-form-text .content h2:first-child span{
+
+.sup-banner-form-text .content h2:first-child span {
     font-weight: bold;
     font-size: 3rem;
     color: var(--second1-color);
-}
-
-.sup-banner-form-text .content p{
-    font-size: 1.5rem;
 }
 
 /* ####### sup-banner-form-body ######### */
@@ -132,11 +103,6 @@ section .supcont-wrapper .supcont-wrapper-right {
     justify-content: center;
     padding-bottom: 3%;
 }
-
-/* .sup-banner-form-photo {
-    flex: 6;
-    width: 50%;
-} */
 
 
 .banner-form-content {
@@ -188,7 +154,7 @@ section .supcont-wrapper .supcont-wrapper-right {
     font-weight: 600;
 }
 
-#p1_form{
+#p1_form {
     color: var(--second1-color)
 }
 
@@ -260,4 +226,29 @@ section .supcont-wrapper .supcont-wrapper-right {
 
 
 
+@media screen and (max-width: 901px) {
 
+    .localisation-banner-info-left .content h2:first-child,
+    .sup-banner-form-text .content h2:first-child,
+    .div1 h2:first-child {
+        font-size: 2rem;
+    }
+
+    .localisation-banner-info-right .icon,
+    .localisation-banner-info-right .text {
+        font-size: 1rem;
+    }
+
+    .sup-banner-form-text .content h2:first-child,
+    .sup-banner-form-text .content h2:first-child span {
+        font-size: 1.8rem;
+    }
+
+    #p1_form,
+    #p2_form {
+        font-size: 10px;
+    }
+
+
+
+}
