@@ -35,7 +35,7 @@ class Realisation(models.Model):
         return self.title
 
 class Message_User(models.Model):
-    name = models.CharField(max_length = 30)
+    name = models.CharField(max_length = 30, default = 'inconnu')
     email = models.EmailField(default = 'kfb@gmail.com')
     message = models.TextField(default = 'message')
     date_send = models.DateTimeField(auto_now_add=True)

@@ -2,6 +2,8 @@ from django.contrib import admin
 from .models import *
 # Register your models here.
 
+
+
 class ServiceAdmin(admin.ModelAdmin):
     list_display = ('sable', 'name', 'description','image')
     search_fields = ['name', ]
@@ -17,10 +19,14 @@ class SableAdmin(admin.ModelAdmin):
 class TestimonialAdmin(admin.ModelAdmin):
     list_display = ('name', 'role', 'comment','stars','photo')
     search_fields = ['name', ]
+class Message_UserAdmin(admin.ModelAdmin):
+    list_display = ('name', 'email', 'message','date_send')
+    search_fields = ['name', ]
 
 admin.site.register(Sable,SableAdmin)
 admin.site.register(Service,ServiceAdmin)
 admin.site.register(Realisation,RealisationAdmin)
+admin.site.register(Message_User,Message_UserAdmin)
 admin.site.register(Testimonial,TestimonialAdmin)
 
 ets='QUALISABLE'

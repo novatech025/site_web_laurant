@@ -18,11 +18,11 @@ def contact(request):
         new_message_user = Message_User.objects.create(name = name, email = email, message = message)
         new_message_user.save()
         
-        print(name)
-        print(email)
-        print(message)
+        # print(name)
+        # print(email)
+        # print(message)
         
-        sujet = "message aux adminitrateur du site de novatech"
+        sujet = "message aux adminitrateur du site de qualisable"
         corps_message = f"""
                 Nom: {name}
                 Email: {email}
