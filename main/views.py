@@ -2,11 +2,10 @@ from django.shortcuts import render
 from .models import *
 from django.core.mail import mail_admins
 from django.contrib import messages
-# Create your views here.
 
 def index(request):
     context = {
-        'title': 'QUALISABLE',
+        'title': 'Accueil | QUALISABLE',
     }
     return render(request, "main/index.html",context)
 
@@ -39,6 +38,7 @@ def contact(request):
         'title': 'Nos Contacts',
     }
     return render(request,"main/contact.html",context)
+
 def service(request):
     services = Service.objects.all()
     context = {
@@ -46,6 +46,7 @@ def service(request):
         'title': 'Nos Services',
     }
     return render(request,"main/services.html",context)
+
 def realisation(request):
     realisations = Realisation.objects.all()
     context = {
@@ -53,5 +54,6 @@ def realisation(request):
         'title': 'Nos Realisations',
     }
     return render(request,"main/realisations.html",context)
-def erreur_404(request,exception):
+
+def erreur_404(request, exception):
     return render(request,"main/404.html",status=404) # gestion des page not found
