@@ -1,4 +1,5 @@
 {% load static %}
+{% load myfilter %}
 
 
 <link rel="stylesheet" href="{% static 'main/css/navbar.css' %}">
@@ -27,12 +28,10 @@
                         logo
                     </a>
                     <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="/">ACCUEIL</a></li>
-                        <li>
-                            <a href="{% url 'main:service' %}">SERVICES</a>
-                        </li>
-                        <li><a href="{% url 'main:realisation' %}">REALISATIONS</a></li>
-                        <li><a href="{% url 'main:contact' %}">CONTACT</a></li>
+                        <li class="{{ selected_tab|filter_selected:'home' }}"><a href="/">ACCUEIL</a></li>
+                        <li class="{{ selected_tab|filter_selected:'services' }}"><a href="{% url 'main:service' %}">SERVICES</a></li>
+                        <li class="{{ selected_tab|filter_selected:'realisations' }}"><a href="{% url 'main:realisation' %}">REALISATIONS</a></li>
+                        <li class="{{ selected_tab|filter_selected:'contact' }}"><a href="{% url 'main:contact' %}">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,9 +45,10 @@
                 <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
                 <div class="uk-navbar-dropdown">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li class="uk-active"><a href="#">Active</a></li>
-                        <li><a href="#">Item</a></li>
-                        <li><a href="#">Item</a></li>
+                        <li class="{{ selected_tab|filter_selected:'home' }}"><a href="/">ACCUEIL</a></li>
+                        <li class="{{ selected_tab|filter_selected:'services' }}"><a href="{% url 'main:service' %}">SERVICES</a></li>
+                        <li class="{{ selected_tab|filter_selected:'realisations' }}"><a href="{% url 'main:realisation' %}">REALISATIONS</a></li>
+                        <li class="{{ selected_tab|filter_selected:'contact' }}"><a href="{% url 'main:contact' %}">CONTACT</a></li>
                     </ul>
                 </div>
             </div>

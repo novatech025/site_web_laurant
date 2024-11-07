@@ -7,6 +7,7 @@ def index(request):
     testimony_list = Testimonial.objects.filter(published=True)[:6]
     context = {
         'title': 'Accueil | QUALISABLE',
+        "selected_tab": "home",
         "testimony_list": testimony_list
     }
 
@@ -53,6 +54,7 @@ def contact(request):
         messages.error(request, "message  envoyer avec succes")
     context = {
         'title': 'Nos Contacts',
+        "selected_tab": "contact",
     }
     return render(request,"main/contact.html",context)
 
@@ -61,6 +63,7 @@ def service(request):
     context = {
         'services': services,
         'title': 'Nos Services',
+        "selected_tab": "services",
     }
     return render(request,"main/services.html",context)
 
@@ -69,6 +72,7 @@ def realisation(request):
     context = {
         'realisations': realisations,
         'title': 'Nos Realisations',
+        "selected_tab": "realisations",
     }
     return render(request,"main/realisations.html",context)
 
