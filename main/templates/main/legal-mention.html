@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!--code html ici-->
+<link rel="stylesheet" href="{% static 'main/css/privacy-policy.css' %}">
+<main>
+    <h1>Mentions Légales</h1>
+
+    <i>Dernière mise à jour : 07-11-2024</i>
+    <hr>
+    <h2>Présentation</h2>
+    
+    Le site web https://www.qualisable.com/ est la propriété de :
+    
+    <ul>
+        <li>QUALISABLE</li>
+        <li>Adresse : Yaoundé, Cameroun</li>
+        <li>Domaine d’activité : Vente et livraison du sable</li>
+    </ul>
+    
+    
+    <h2>Création du site</h2>
+    
+    Le site web a été développé par Novatech spécialisé dans la conception de sites Web de haute qualité
+    
+    <h2>Hébergement</h2>
+    
+    Le site web est hébergé par :
+    
+    <ul>
+        <li>PythonAnywhere LLP</li>
+        <li>UK VAT No.: 893564379</li>
+        <li>EU VAT No.: EU372015865</li>
+        <li>Registered in England and Wales as company number OC378414.</li>
+        <li>Registered address: 5 The Green, Richmond, TW9 1PL, UK</li>
+    </ul>
+
+   <h2>Nom de domaine</h2>
+    
+    Le nom de domaine est enregistré auprès de :
+    
+    <ul>
+        <li>GoDaddy Operating Company, LLC.</li>
+        <li>100 S Mill Ave, Suite 1600, Tempe, AZ 85281 USA.</li>
+    </ul>
+    
+    <h2>Propriété intellectuelle</h2>
+    
+    L'ensemble des contenus du site web, y compris les textes, les images, les logos, les vidéos et les autres éléments, est protégé par les droits de propriété intellectuelle. Toute reproduction, modification, diffusion ou utilisation non autorisée de ces contenus est strictement interdite.
+    
+    <h2>Responsabilité</h2>
+    
+    QUALISABLE s'efforce de fournir des informations exactes et à jour sur son site web. Cependant, elle ne peut garantir l'exactitude, la complétude ou la fiabilité des informations fournies. QUALISABLE décline toute responsabilité pour tout dommage direct ou indirect résultant de l'utilisation des informations du site web.
+    
+    <h2>Liens hypertextes</h2>
+    
+    Le site web peut contenir des liens hypertextes vers d'autres sites web. QUALISABLE n'a aucun contrôle sur le contenu de ces sites web et décline toute responsabilité pour tout dommage résultant de l'utilisation de ces sites web.
+    
+   <h2>Données personnelles</h2>
+    
+    Les informations personnelles collectées sur le site web sont utilisées uniquement pour répondre à vos demandes de renseignements et améliorer l'expérience utilisateur. QUALISABLE s'engage à protéger la confidentialité de vos données personnelles. Pour plus d'informations, consultez notre Politique de confidentialité.
+    
+    <h2>Loi applicable</h2>
+    
+    Le site web est régi par la législation camerounaise. Tout litige relatif au site web sera soumis à la compétence exclusive des tribunaux compétents de Yaoundé, Cameroun.
+    
+    <h2>Contact</h2>
+    
+    Pour toute question concernant le site web, veuillez contacter QUALISABLE à l'adresse <a href="mailto:qualisable.laurant@gmail.com">qualisable.laurant@gmail.com</a> ou <a href="{% url 'main:contact' %}">ici</a>.
+</main>
+{% endblock %}

@@ -384,14 +384,13 @@
 
 .testimony-div .uk-slider-items {
     align-items: center;
-    gap: 10%;
+    gap: 5% !important;
 }
 
 
 
 .one-testimony-card {
     background-color: white;
-    /* background-color: rgba(88, 41, 0, 0.1); */
     height: 400px;
     width: 400px;
     box-sizing: border-box;
@@ -400,9 +399,9 @@
     padding-bottom: 1%;
     padding-right: 1%;
     box-shadow:
-  -5px -7.2px 5.6px -6px rgba(0, 0, 0, 0.036),
-  -6.2px -8.8px 6.6px -6px rgba(0, 0, 0, 0.054),
-  14px 20px 18px -6px rgba(0, 0, 0, 0.09)
+  -2px -1.2px 1.6px -1px rgba(0, 0, 0, 0.036),
+  -3.2px -4.8px 1.6px -3px rgba(0, 0, 0, 0.054),
+  2px 3px 2px -1px rgba(0, 0, 0, 0.09)
 ;
     position: relative;
 }
@@ -423,15 +422,10 @@
     background-color: var(--principal1-color);
     background-color: white;
     box-sizing: border-box;
-    /* border-radius: 15px; */
     position: relative;
     box-shadow:
         0px 2.1px 1.4px rgba(0, 0, 0, 0.07),
-        0px 5.1px 3.3px rgba(0, 0, 0, 0.05),
-        0px 9.5px 6.1px rgba(0, 0, 0, 0.042),
-        0px 17px 10.9px rgba(0, 0, 0, 0.035),
-        0px 31.8px 20.5px rgba(0, 0, 0, 0.028),
-        0px 76px 49px rgba(0, 0, 0, 0.02);
+        0px 5.1px 3.3px rgba(0, 0, 0, 0.05);
 }
 
 .sur-one-testimony-card {

@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!--code html ici-->
+<link rel="stylesheet" href="{% static 'main/css/privacy-policy.css' %}">
+<main>
+    <h1>Politique de Confidentialité</h1>
+
+<i>Dernière mise à jour : 07-11-2024</i>
+<hr>
+QUALISABLE s'engage à protéger la confidentialité des informations personnelles de ses utilisateurs. Cette politique de confidentialité décrit les informations que nous collectons, comment nous les utilisons, les partageons et les protégeons lorsque vous visitez notre site web.
+
+<H2>Informations que nous collectons</H2>
+
+<b>Informations de contact:</b> Lorsque vous nous contactez via la page "Contact", nous collectons votre nom, votre adresse email et votre message.
+
+<h2>Utilisation de vos informations</h2>
+
+<ul>
+    <li><b>Répondre à vos demandes:</b> Nous utilisons vos informations de contact pour répondre à vos questions, commentaires et demandes de renseignements.</li>
+    <li>Améliorer notre site web: Nous pouvons utiliser vos informations pour améliorer notre site web et l'expérience utilisateur.</li>
+</ul>
+
+<h2>Partage de vos informations</h2>
+
+<ul>
+    <li><b>Tiers:</b> Nous ne partageons pas vos informations personnelles avec des tiers, à l'exception de nos fournisseurs de services qui nous aident à fournir notre site web et nos services.</li>
+    <li><b>Obligations légales:</b> Nous pouvons divulguer vos informations si la loi l'exige ou si nous pensons que la divulgation est nécessaire pour protéger nos droits, notre sécurité ou celle de nos utilisateurs, ou pour enquêter sur une activité suspecte.</li>
+</ul>
+<h2>Sécurité de vos informations</h2>
+
+<ul>
+    <li><b>Mesures de sécurité:</b> Nous prenons des mesures de sécurité raisonnables pour protéger vos informations personnelles contre la perte, le vol, l'accès non autorisé, la divulgation, la modification ou la destruction.</li>
+    <li><b>Confidentialité:</b> Nous limitons l'accès à vos informations personnelles aux employés qui en ont besoin pour exécuter leurs tâches.</li>
+</ul>
+
+<h2>Vos choix</h2>
+
+<ul>
+    <li><b>Accès et modification:</b> Vous pouvez nous contacter pour accéder à vos informations personnelles, les modifier ou les supprimer.</li>
+    <li><b>Désabonnement:</b> Vous pouvez vous désinscrire de nos communications marketing en suivant les instructions de désabonnement contenues dans chaque email.</li>
+</ul>
+
+<h2>Modifications de la politique de confidentialité</h2>
+
+Nous pouvons modifier cette politique de confidentialité à tout moment. Nous publierons toute modification sur notre site web. Veuillez consulter régulièrement cette politique de confidentialité pour rester informé de toute mise à jour.
+
+<h2>Contact</h2>
+
+Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter à l'adresse <a href="mailto:qualisable.laurant@gmail.com">qualisable.laurant@gmail.com</a> ou <a href="{% url 'main:contact' %}">ici</a>.
+
+</main>
+{% endblock %}

@@ -4,12 +4,27 @@ from django.core.mail import mail_admins
 from django.contrib import messages
 
 def index(request):
+    testimony_list = Testimonial.objects.filter(published=True)[:6]
     context = {
         'title': 'Accueil | QUALISABLE',
+        "testimony_list": testimony_list
     }
-    latest_post_list = Testimonial.objects.filter(published=True)[:3]
 
     return render(request, "main/index.html",context)
+
+def privacy_policy(request):
+    context = {
+        'title': 'Politique de confidentialité | QUALISABLE',
+    }
+
+    return render(request, "main/privacy-policy.html",context)
+
+def legal_mention(request):
+    context = {
+        'title': 'Mentions légales | QUALISABLE',
+    }
+
+    return render(request, "main/legal-mention.html",context)
 
 def contact(request):
     if request.POST:

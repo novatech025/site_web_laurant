@@ -1,0 +1,29 @@
+
+
+h1 {
+    color: var(--principal1-color);
+}
+
+h2 {
+    color: var(--second1-color);
+}
+
+main {
+    margin: 5% 18%;
+    border-top: 10px solid var(--second1-color);
+    background-color: white;
+    padding: 2%;
+
+}
+
+span {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 901px) {
+    main {
+        margin: 5%;
+    }
+
+}
