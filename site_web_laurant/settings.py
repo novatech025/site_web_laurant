@@ -15,19 +15,6 @@ import os
 import environ
 
 
-# from . .env import *
-
-
-# EMAIL_BACKEND = EMAIL_BACKEND
-# EMAIL_USE_TLS =EMAIL_USE_TLS
-# EMAIL_HOST =EMAIL_HOST
-# EMAIL_HOST_USER =EMAIL_HOST_USER
-# EMAIL_HOST_PASSWORD =EMAIL_HOST_PASSWORD
-# EMAIL_PORT =EMAIL_PORT
-
-# SERVER_EMAIL = SERVER_EMAIL 
-# EMAIL_SUBJECT_PREFIX = EMAIL_SUBJECT_PREFIX 
-# ADMINS =ADMINS
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -38,14 +25,15 @@ environ.Env.read_env(env_file=str(BASE_DIR/".env"))
 
 
 EMAIL_BACKEND = env("EMAIL_BACKEND")
-EMAIL_USE_TLS = env("EMAIL_USE_TLS")
+EMAIL_USE_TLS = env.bool("EMAIL_USE_TLS")
 EMAIL_HOST = env("EMAIL_HOST")
 EMAIL_HOST_USER = env("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
 EMAIL_PORT = env("EMAIL_PORT")
 SERVER_EMAIL = env("SERVER_EMAIL")
 EMAIL_SUBJECT_PREFIX = env("EMAIL_SUBJECT_PREFIX")
-ADMINS = env.list('ADMINS')
+
+# ADMINS = env.list('ADMINS')
 
 
 # Quick-start development settings - unsuitable for production
