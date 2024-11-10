@@ -46,11 +46,20 @@ class Message_User(models.Model):
 
 
 class Testimonial(models.Model):
+    RATE_LEVEL = (
+        (0, "Très mécontent", ),
+        (1, "Mécontent", ),
+        (2, "Indifférent",),
+        (3, "Satisfait",),
+        (4, "Assez Satisfait",),
+        (5, "Très Satisfait",),
+        )
     name = models.CharField(max_length=100,verbose_name="Nom")
     photo = models.ImageField(upload_to='testimonials/')
     role = models.CharField(max_length=100 , verbose_name="Métier")
-    comment = models.TextField(verbose_name="Commentaire")
-    stars = models.PositiveIntegerField(default=5,verbose_name="étoiles")
+    comment = models.TextField(max_length=210,verbose_name="Commentaire")
+    stars = models.PositiveIntegerField(choices=RATE_LEVEL, default=5,verbose_name="étoiles")
+    published = models.BooleanField(default=True, verbose_name="publié")
 
     def __str__(self):
         return f"{self.name} - {self.role}"
@@ -58,6 +67,13 @@ class Testimonial(models.Model):
     def get_star_rating(self):
         return "★" * self.stars + "☆" * (5 - self.stars)
 
+    def get_colored_rate_list(self):
+        return [i for i in range(self.stars)]
+    
+
+    def get_uncolored_rate_list(self):
+        return [i for i in range(5 - self.stars)]
+    
     class Meta:
         verbose_name = "Témoignage"
         verbose_name_plural = "Témoignages"
