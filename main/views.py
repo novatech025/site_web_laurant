@@ -77,4 +77,4 @@ def realisation(request):
     return render(request,"main/realisations.html",context)
 
 def erreur_404(request, exception):
-    return render(request,"main/404.html",status=404) # gestion des page not found
+    return render(request,"main/404.html",status=404) 
