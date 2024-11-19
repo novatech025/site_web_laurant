@@ -8,31 +8,6 @@
   <section class="uk-section">
     <div class="uk-container">
       <h2 class="text service uk-heading-medium">Nos Services</h2>
-      <div class="uk-child-width-1-3@m" uk-grid>
-
-
-
-        {% for service in services %}
-         <!-- {{service.title}} -->
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-inline">
-            <img src="{{ service.image.url }}" alt="{{service.name}}" width="1800" height="1200">
-
-            <div class="text uk-overlay uk-overlay-default uk-position-bottom">
-                <p>{{service.sable.type}}</p>
-            </div>
-        </div>
-            <div class="uk-card-body">
-
-              <h3 class="uk-card-title">{{service.name}} </h3>
-              <p>{{service.description}}</p>
-            </div>
-          </div>
-        </div>
-
-        {% endfor %}
-      </div>
 
     </div>
   </section>
