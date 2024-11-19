@@ -59,9 +59,7 @@ def contact(request):
     return render(request,"main/contact.html",context)
 
 def service(request):
-    services = Service.objects.all()
     context = {
-        'services': services,
         'title': 'Nos Services',
         "selected_tab": "services",
     }
