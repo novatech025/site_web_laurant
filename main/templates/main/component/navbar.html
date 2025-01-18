@@ -24,9 +24,8 @@
         <div class="uk-container">
             <div uk-navbar class="uk-navbar">
                 <div class="uk-navbar-left">
-                    <a href="/">
-                        logo
-                    </a>
+                    <div href="/" class="logo" style="background-image: url('static/main/images/logo/logo.png');">
+                    </div>
                     <ul class="uk-navbar-nav">
                         <li class="{{ selected_tab|filter_selected:'home' }}"><a href="/">ACCUEIL</a></li>
                         <li class="{{ selected_tab|filter_selected:'services' }}"><a href="{% url 'main:service' %}">SERVICES</a></li>

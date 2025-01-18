@@ -45,11 +45,13 @@
                     <div class="brutalist-card">
                         <div class="brutalist-card__header">
                             <div class="brutalist-card__icon">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
                                     </path>
-                                </svg>
+                                </svg> -->
+                                <div href="/" class="banner_logo" style="background-image: url('static/main/images/logo/logo.png');">
+                                </div>
                             </div>
                             <div class="brutalist-card__alert">QUALISABLE</div>
                         </div>
@@ -60,8 +62,8 @@
                             adaptés à tous vos projets, de la construction à l'aménagement paysager.
                         </div>
                         <div class="brutalist-card__actions">
-                            <a class="brutalist-card__button brutalist-card__button--mark" href="#">NOUS CONTACTER</a>
-                            <a class="brutalist-card__button brutalist-card__button--read" href="#">PASSER MA
+                            <a class="brutalist-card__button brutalist-card__button--mark" href="{% url 'main:contact' %}">NOUS CONTACTER</a>
+                            <a class="brutalist-card__button brutalist-card__button--read" href="{% url 'main:service' %}">PASSER MA
                                 COMMANDE</a>
                         </div>
                     </div>
@@ -85,7 +87,7 @@
             plus grossiers pour le drainage et le remblaiement. Chaque type de sable est soigneusement sélectionné pour
             garantir sa qualité et sa conformité aux normes en vigueur.
         </p>
-        <a class="brutalist-card__button brutalist-card__button--mark" href="#">CONSULTER NOTRE CATALOGUE</a>
+        <a class="brutalist-card__button brutalist-card__button--mark" href="{% url 'main:service' %}">CONSULTER NOTRE CATALOGUE</a>
     </div>
     <div class="div-vente-achat-right" id="vente-achat-right-id">
         <img class="uk-visible@s" src="{% static 'main/images/sable/179-sable-0-2.jpg' %}" alt="">
@@ -135,7 +137,7 @@
             vos besoins. Que ce soit pour des travaux de construction, d'aménagement paysager ou d'autres projets,
             n'hésitez pas à nous contacter pour obtenir des recommandations personnalisées.</p>
         <a uk-scrollspy="cls: uk-animation-slide-bottom" class="brutalist-card__button brutalist-card__button--mark"
-            href="#">NOUS CONTACTER</a>
+            href="{% url 'main:contact' %}">NOUS CONTACTER</a>
 
     </div>
     <div class="advice-div-left">
