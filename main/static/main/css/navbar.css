@@ -29,10 +29,6 @@ header .header-top .header-top-left {
     color: white;
 }
 
-/* header .header-top .header-top-left {
-    flex: 4;
-    background-color: var(--second1-color);
-} */
 
 header .header-top .header-top-left {
     flex: 6;
@@ -149,4 +145,4 @@ header .uk-sticky-fixed {
         min-height: 30px !important;
     }
 
-}
+} 
