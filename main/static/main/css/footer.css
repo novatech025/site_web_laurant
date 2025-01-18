@@ -6,6 +6,26 @@ footer{
     margin: 0px;
 }
 
+
+.footer_logo 
+{
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    background-size: contain;
+    background-position: center;
+}
+
+footer hr 
+{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    /* border: 1px solid  var(--principal2-color); */
+    /* width: 70%;
+    margin: auto; */
+    margin: 0px 13%;
+
+}
 .footer-content{
     background-color: var(--principal1-color);
     background-color: #1d0e00;
@@ -15,6 +35,7 @@ footer{
     justify-content: space-evenly;
     margin: 0px;
     padding-top: 20px;
+    /* border-top: 1px solid rgba(255, 255, 255, 0.5); */
 }
 
 .footer-content h3 {
@@ -49,6 +70,7 @@ footer{
 
 .plan-site-div li a {
     color: white;
+    font-size: 20px;
 
 }
 
