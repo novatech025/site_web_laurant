@@ -25,11 +25,9 @@ environ.Env.read_env(env_file=str(BASE_DIR/".env"))
 print(BASE_DIR)
 print(env)
 
-<<<<<<< HEAD
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-=======
->>>>>>> c81c21ddad7c80354dc2581adaf768c4bf091812
 EMAIL_USE_TLS = env.bool("EMAIL_USE_TLS")
 EMAIL_HOST = env("EMAIL_HOST")
 EMAIL_HOST_USER = env("EMAIL_HOST_USER")
